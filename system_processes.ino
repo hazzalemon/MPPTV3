@@ -11,8 +11,8 @@ void System_Processes(){
     else{}                                                             //DYNAMIC PWM COOLING MODE (3-PIN FAN - coming soon)
   }
   else{digitalWrite(FANPIN,LOW);}                                         //Fan Disabled
-  Serial.print("fan state: ");
-  Serial.print(fanStatus);
+  Serial.print("current trim: ");
+  Serial.print(phaseA_trim);
   //////////// LOOP TIME STOPWATCH ////////////
   loopTimeStart = micros();                                            //Record Start Time
   loopTime = (loopTimeStart-loopTimeEnd)/1000.000;                     //Compute Loop Cycle Speed (mS)
